@@ -13,14 +13,18 @@ body {
 #header-section ul {
 	float: right;
 }
-#header-section li {
+#header-section .navButtons li {
 	list-style: none;
 	display: inline-block;
 	margin-right: 2em;
 }
-#header-section li:hover {
+#header-section .navButtons li:hover {
 	font-weight: 900;
 	cursor: pointer;
+}
+#header-section .navButtons a {
+	text-decoration: none;
+	color: #000;
 }
 /*INTRO SECTION*/
 #intro-section {
@@ -41,11 +45,48 @@ body {
 	top:0;
 }
 /*CALENDAR SECTION*/
+#calendar-section iframe {
+	width: 80%;
+	display: block;
+	margin: 5em auto;
+	box-shadow: 10px 10px 5px grey;
+}
 /*SOCIAL SECTION*/
+
+
 /*FOOTER SECTION*/
+#footer-section {
+	border-top: 1px solid #000;
+	text-align: center;
+	width: 60%;
+	margin: 0 auto;
+	color: #424242;
+}
+#footer-section li {
+	list-style: none;
+	display: inline;
+}
+#footer-section i {
+	font-size: 2em;
+	margin-right: 1em;
+}
+#footer-section i:hover {
+	color: #000;
+	cursor: pointer;
+}
+#footer-section a {
+	color: #424242;
+}
+
 /*MEDIA QUERIES*/
 @media only screen and (max-width: 40em) {
 	#header-section li {
 		display: block;
 	}
+	#calendar-section iframe {
+		width: 100%;
+	}
+	/*#calendar-section iframe .nav-table {
+		white-space: pre-wrap; //can't seem to target elements within the iframe
+	}*/
 }
