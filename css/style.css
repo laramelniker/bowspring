@@ -1,0 +1,51 @@
+/*UNIVERSAL STYLES*/
+body {
+	font-family: 'Poiret One';
+}
+/*HEADER SECTION*/
+#header-section {
+	width: 100%;
+	height: 4em;
+	position: fixed;
+	background: #fff;
+	z-index: 1;
+}
+#header-section ul {
+	float: right;
+}
+#header-section li {
+	list-style: none;
+	display: inline-block;
+	margin-right: 2em;
+}
+#header-section li:hover {
+	font-weight: 900;
+	cursor: pointer;
+}
+/*INTRO SECTION*/
+#intro-section {
+	min-height: 50em;
+}
+.introImage {
+	background: url('../images/yoga.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+	min-height: 50em;
+	-webkit-filter:opacity(.4);
+}
+.introTextWrapper {
+	width: 100%;
+	padding-top: 20em;
+	text-align: center;
+	position: absolute;
+	top:0;
+}
+/*CALENDAR SECTION*/
+/*SOCIAL SECTION*/
+/*FOOTER SECTION*/
+/*MEDIA QUERIES*/
+@media only screen and (max-width: 40em) {
+	#header-section li {
+		display: block;
+	}
+}
